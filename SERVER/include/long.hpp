@@ -635,7 +635,7 @@ void fflushmessage(void *args)
                 freelen = len;
                 if (len == 0)
                 {
-                    std::this_thread::sleep_for(std::chrono::milliseconds(1000)); // 休眠 1 秒
+                    // std::this_thread::sleep_for(std::chrono::milliseconds(1000)); // 休眠 1 秒
 
                     forwandr::sendMsg(fd, to_string(len));
                     // cout << " number " << number << endl;
